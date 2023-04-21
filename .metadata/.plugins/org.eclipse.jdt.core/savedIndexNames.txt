@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\Steva\list-map-regex\.metadata\.plugins\org.eclipse.jdt.core
+2406042108.index
+1865797976.index
+4269759981.index
+4097727055.index
