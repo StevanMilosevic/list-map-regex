@@ -60,14 +60,7 @@ public class RegularniIzrazi {
 		// matches() gleda ceo tekst za poklapanje
 
 		System.out.println(m2.find() + " - " + m3.find()); 			// true - true
-		System.out.println(m2.matches() + " - " + m3.matches()); 	// true - false
-		
-		// split()
-		Pattern p5 = Pattern.compile("vod");
-		Matcher m4 = p5.matcher("Prevoddesetog izadanja");
-		
-		System.out.println(m4.split());
-		
+		System.out.println(m2.matches() + " - " + m3.matches()); 	// true - false		
 
 		// sledeci patern pronalazi sva imena koja pocinju sa "Mil" i pretvara ih u "Pera"
 		String imena = "Dragan Milan Milica Milena Jovan Stevan Milivoje Milorad Bane";
