@@ -1,0 +1,31 @@
+package regex;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexDemo {
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		for(int i = 0; i < 5; i++) {
+			System.out.println("Enter regex pattern:");
+			Pattern pattern = Pattern.compile(input.nextLine());
+			
+			System.out.println("Enter text:");
+			Matcher matcher = pattern.matcher(input.nextLine());
+			
+			boolean pogodak = false;
+			while (matcher.find()) {
+				System.out.println("Pronadjen patern \"" + matcher.group() + "\" koji pocinje na indeksu " + matcher.start()
+						+ " i zavrsava se na indeksu " + matcher.end());
+				pogodak = true;
+			}
+			if (!pogodak) {
+				System.out.println("Nije pronadjen match");
+			
+			}
+		}
+	}
+
+}
