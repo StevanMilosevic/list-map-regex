@@ -51,7 +51,7 @@ public class RegularniIzrazi {
 		System.out.println();
 
 		// .(tacka)
-		Pattern p4 = Pattern.compile(".a"); // trazi rec koja ima 2 slova i na drugom mestu je A
+		Pattern p4 = Pattern.compile(".a"); // trazi 2 slova i na drugom mestu je A
 		Matcher m2 = p4.matcher("Ja");
 		Matcher m3 = p4.matcher("Jasno");
 
@@ -60,7 +60,7 @@ public class RegularniIzrazi {
 		// matches() gleda ceo tekst za poklapanje
 
 		System.out.println(m2.find() + " - " + m3.find()); 			// true - true
-		System.out.println(m2.matches() + " - " + m3.matches()); 	// true - false		
+		System.out.println(m2.matches() + " - " + m3.matches()); 	// true - false
 
 		// sledeci patern pronalazi sva imena koja pocinju sa "Mil" i pretvara ih u "Pera"
 		String imena = "Dragan Milan Milica Milena Jovan Stevan Milivoje Milorad Bane";
